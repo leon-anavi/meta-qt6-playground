@@ -38,7 +38,7 @@ RDEPENDS:${PN} += " \
 # Disable support of 128bit ints and add path to Python.h
 CXXFLAGS += " -DQT_NO_INT128 -I${PYTHON_INCLUDE_DIR}"
 
-EXTRA_OEMAKE = "INSTALL_ROOT=${D}"
+EXTRA_OEMAKE += "INSTALL_ROOT=${D}"
 
 DISABLED_FEATURES = " \
     PyQt_Desktop_OpenGL \
